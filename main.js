@@ -3,7 +3,7 @@
         return fetch(url).then(res => res.json());
     }
 
-    const productsUrl = 'http://demo8808386.mockable.io/fetchProperties';
+    const productsUrl = 'https://demo8808386.mockable.io/fetchProperties';
 
     let ProprtiesData = [];
 
