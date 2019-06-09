@@ -1,0 +1,18 @@
+{
+  "name": "nobroker-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://sirius93.github.io/nobroker-test/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server -c bs-config.json",
+    "deploy": "gh-pages -d src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0",
+    "gh-pages": "^1.2.0"
+  }
+}

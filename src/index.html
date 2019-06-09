@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Nobroker</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body>
+        <div class="overlay"></div>
+        <main class="main-container">
+            <aside class="filters">
+                <div class="filter-header">
+                    <p>Filters</p>
+                </div>
+                <div class="filters-wrapper">
+                    <p>Filter by Rent</p>
+                    <div class="range-slider rent">
+                        <p class="rangeValues rent"></p>
+                        <input class="input-1" name="rent" onchange="initiateSliders()" value="8000" min="8000" max="25000" step="500" type="range">
+                        <input class="input-2" name="rent" onchange="initiateSliders()" value="50000" min="25000" max="50000" step="500" type="range">
+                    </div>
+
+                  
+                    <div class="range-slider propertySize">
+                            <br/>
+                        <p>Filter by Size</p>
+                        <p class="rangeValues propertySize"></p>
+                        <input class="input-1" onchange="initiateSliders()" name="propertySize" value="500" min="500" max="1250" step="50" type="range">
+                        <input class="input-2" onchange="initiateSliders()" name="propertySize" value="2500" min="1250" max="2500" step="50" type="range">
+                    </div>
+                   
+                    <div>
+                        <span class="photo-checkbox">
+                            <label for="photocheckbox">Click Here</label>
+                            <input type="checkbox" name="isPhotoAvailable" value="selected" id="photocheckbox">
+
+                        </span>
+                        <span>To filter by photos Availability</span>
+                    </div>
+                    
+                    <div class="ResetButton">
+                        <a href="javascript:void(0)">Reset Filters</a>
+                    </div>
+                  
+                    <div class="view-buttons">
+                        <a class="list-view" href="javascript:void(0)">List View</a>
+                        <a class="grid-view selected" href="javascript:void(0)">Grid View</a>
+                    </div>
+                    
+                </div>
+            </aside>
+            <section class="properties">
+                <div class="section-header">
+                    <p class="result-header">Showing 21 results for 'Houses'</p>
+                    <div class="sort-options clearfix">
+                        <p>Sort By</p>
+                        <a href="javascript:void(0)" class="sort selected">Relevance</a>
+                        <a href="javascript:void(0)" class="sort">Rent - Low to High</a>
+                        <a href="javascript:void(0)" class="sort">Rent - High to Low</a>
+                        <a href="javascript:void(0)" class="sort">Size - High to Low</a>
+                        <a href="javascript:void(0)" class="sort">Size - Low to High</a>
+                        <a href="javascript:void(0)" class="sort">Date - High to Low</a>
+                        <a href="javascript:void(0)" class="sort">Date - Low to High</a>
+                    </div>
+                </div>
+                <div class="property-wrapper">
+                    <!-- Insert the property here dynamically -->
+                </div>
+            </section>
+            <button class="filter-button"><i class="fas fa-2x fa-filter"></i>
+
+            </button>
+        </main>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
